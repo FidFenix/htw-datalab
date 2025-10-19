@@ -18,6 +18,7 @@ htw_datalab = { path = ".", editable = true }
 
 [tool.pixi.tasks]
 start = "python ./src/htw_datalab/prompt/main.py"
+etl = "python ./src/htw_datalab/etl/main.py"
 
 [tool.pixi.dependencies]
 python = "3.10.*"

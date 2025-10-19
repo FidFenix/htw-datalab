@@ -1,6 +1,7 @@
 import os
 import getpass
 from dotenv import find_dotenv, load_dotenv
+from htw_datalab.etl.collect_data import get_tweets_and_save
 
 def load_envs():
     print('loading envs...')
@@ -21,5 +22,4 @@ if __name__=="__main__":
     bearer_token = os.environ['TWITTER_BEARER_TOKEN']
     company_name = os.environ['TWITTER_COMPANY_TO_CRAWL_FROM']
     print(f'crawling tweets from company: {company_name}')
-    como()
     #get_tweets_and_save(bearer_token=bearer_token, company_tweet=company_name)
