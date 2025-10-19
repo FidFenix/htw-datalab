@@ -1,7 +1,6 @@
 # pixi environments
 .pixi/*
 !.pixi/config.toml
-.env
 src/data/*
 pixi.lock
 
